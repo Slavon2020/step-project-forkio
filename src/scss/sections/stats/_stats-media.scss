@@ -1,0 +1,44 @@
+@media (min-width: 481px) and (max-width: 992px) {
+    .stats {
+        padding: 160px 0;
+        &__heading {
+            font-size: 42px;
+            line-height: 42px;
+            color: #635C73;
+        }
+        &__text {
+            margin-bottom: 24px;
+            padding: 0 30px;
+            font-size: 21px;
+            line-height: 32px;
+            color: #323232;
+        }
+    }
+}
+
+@media (min-width: 481px) {
+    .stats__items {
+        max-width: 100%;
+    }
+    
+    .stat-item {
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
+}
+
+@media (min-width: 993px) {
+    .stats {
+        padding: 130px 0 70px;
+        &__heading {
+            font-size: 54px;
+            line-height: 54px;
+        }
+        &__text {
+            font-size: 21px;
+            line-height: 32px;
+            padding: 0 240px;
+        }
+    }
+}
