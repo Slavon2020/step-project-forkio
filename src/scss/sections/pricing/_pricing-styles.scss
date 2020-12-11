@@ -30,9 +30,13 @@
 }
 
 .pricing-card {
-    width: 100%;
+    width: 257px;
+    height: 457px;
     &:not(:last-child) {
         margin-bottom: 18px;
+    }
+    &:first-child .pricing-card__type {
+        margin-bottom: 65px;
     }
     padding-bottom: 67px;
     background: #5F5161;
