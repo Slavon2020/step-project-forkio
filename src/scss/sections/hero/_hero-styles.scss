@@ -3,11 +3,12 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
   width: 100%;
-  height: 720px;
+  //height: 720px;
   background-image: url('../img/hero-img/bg-hero.png');
 
-  &-nav {
+  &-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,7 +62,51 @@
     line-height: 14px;
     color: #848E97;
   }
+  &-copyrite{
+    margin-top: 12px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #848E97;
+  }
 }
+.hero-nav{
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  &--mobile{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    transition: 0.3s top;
+    background: #333333;
+
+  & .hero-nav__link{
+    padding: 30px 35px 20px;
+    text-align: start;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 26px;
+    color: #FFFFFF;
+  }
+  }
+  &__link{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: #8D81AC;
+  }
+}
+
 
 
 .burger {
@@ -72,16 +117,16 @@
 
   &--opened {
     & .burger--line {
-      &:nth-child(1) {
-        transform: translate(50px, 0px);
+      &-first{
+        display: none;
       }
 
       &:nth-child(2) {
-        transform: translate(1px, 4px) rotate(45deg);
+        transform: translate(1px, 2px) rotate(45deg);
       }
 
       &:nth-child(3) {
-        transform: translate(1px, -4px) rotate(-45deg);
+        transform: translate(1px, -7px) rotate(-45deg);
       }
     }
   }
@@ -100,4 +145,18 @@
     background: #FFFFFF;
     border-radius: 5px;
   }
+}
+.download-now{
+  width: 290px;
+  height: 45px;
+  margin-top: 395px;
+  background: #8D81AC;
+  border: none;
+  border-radius: 40px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: #FFFFFF;
 }
