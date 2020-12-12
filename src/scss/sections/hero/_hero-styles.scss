@@ -3,9 +3,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  position: relative;
   width: 100%;
-  //height: 720px;
+  position: relative;
+  background-position: center;
   background-image: url('../img/hero-img/bg-hero.png');
 
   &-header {
@@ -13,13 +13,10 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background: #27262A;
 
-    &--logo {
-      padding: 30px 0 30px 15px;
-
-    }
 
     &--btn {
       width: 119px;
@@ -33,10 +30,23 @@
       font-size: 15px;
       line-height: 15px;
       color: #FFFFFF;
+      cursor: pointer;
+    }
+
+    &--btn:hover  {
+      background-color: #FFFFFF;
+      border: 2px solid #8D81AC;
+      color: #8D81AC;
     }
   }
 
+
+  &-title-section {
+
+  }
+
   &-title {
+    margin-top: 50px;
     margin-bottom: 20px;
     font-family: Montserrat;
     font-style: normal;
@@ -45,7 +55,8 @@
     line-height: 48px;
     color: #FFFFFF;
   }
-  &-subtitle{
+
+  &-subtitle {
     margin-bottom: 15px;
     font-family: Montserrat;
     font-style: normal;
@@ -54,7 +65,9 @@
     line-height: 24px;
     color: #8D81AC;
   }
-  &-destiny{
+
+  &-destiny {
+    margin-bottom: 350px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -62,42 +75,113 @@
     line-height: 14px;
     color: #848E97;
   }
-  &-copyrite{
-    margin-top: 12px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    color: #848E97;
+
+  &-bottom {
+    transform: translateY(48px);
+
+    &__btn {
+      width: 290px;
+      height: 45px;
+      background: #8D81AC;
+      border: none;
+      border-radius: 40px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 20px;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+
+    &:hover .hero-bottom__btn {
+      background-color: #FFFFFF;
+      border: 2px solid #8D81AC;
+      color: #8D81AC;
+    }
+
+    &__copyrighte {
+      margin-top: 12px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+      color: #848E97;
+    }
   }
 }
-.hero-nav{
-  display: none;
-  justify-content: space-between;
+
+.logo {
+  display: flex;
   align-items: center;
-  padding: 10px;
 
-  &--mobile{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100px;
-    transition: 0.3s top;
-    background: #333333;
-
-  & .hero-nav__link{
-    padding: 30px 35px 20px;
-    text-align: start;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 26px;
-    line-height: 26px;
+  &:hover .logo__text {
     color: #FFFFFF;
   }
+
+  &:hover .logo__icon {
+    fill: #FFFFFF !important;
   }
-  &__link{
+
+  &__icon-wrap {
+
+  }
+
+  &__icon {
+    //fill: #8D81AC;
+  }
+
+  &__text {
+    display: none;
+    padding-left: 17px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #8D81AC;
+    overflow: hidden;
+  }
+}
+
+.hero-nav {
+  display: none;
+  //justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &--mobile {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 104px;
+    left: 5%;
+    width: 90%;
+    padding-bottom: 15px;
+    transition: 0.5s top;
+    background: #333333;
+
+    &-active {
+      display: flex;
+    }
+
+    & .hero-nav__link {
+      padding: 30px 35px 20px;
+      border-bottom: 3px solid #3b3b3b;
+      text-align: start;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 26px;
+      color: #FFFFFF;
+    }
+  }
+
+  &__link {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -108,7 +192,6 @@
 }
 
 
-
 .burger {
   display: flex;
   flex-direction: column;
@@ -117,7 +200,7 @@
 
   &--opened {
     & .burger--line {
-      &-first{
+      &-first {
         display: none;
       }
 
@@ -145,18 +228,4 @@
     background: #FFFFFF;
     border-radius: 5px;
   }
-}
-.download-now{
-  width: 290px;
-  height: 45px;
-  margin-top: 395px;
-  background: #8D81AC;
-  border: none;
-  border-radius: 40px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20px;
-  color: #FFFFFF;
 }

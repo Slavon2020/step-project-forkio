@@ -1,6 +1,80 @@
 @media (min-width: 481px) and (max-width: 992px) {
-  
+
+  .hero{
+    &-header {
+    flex-wrap: wrap;
+    padding-top: 25px;
+    padding-bottom: 10px;
+
+    &--btn {
+      width: 145px;
+      margin-right: 2.6%;
+    }
+    }
+    &-bottom{
+      transform: translateY(55px);
+      &__btn{
+        width: 390px;
+        height: 62px;
+      }
+    }
+  }
+
+  .logo {
+    padding-left: 2.6%;
+
+    &__text {
+      display: flex;
+      overflow: initial;
+    }
+  }
+
+  .hero-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+
+    &__link {
+      padding-left: 2.4%;
+      padding-right: 2.4%;
+    }
+  }
+
+  .burger {
+    display: none;
+    overflow: hidden;
+  }
 }
+
 @media (min-width: 993px) and (max-width: 1200px) {
-  
+  .hero {
+    &-header {
+      background: none;
+
+      &--btn {
+        width: 145px;
+        margin-right: 7.5%;
+      }
+    }
+    &-bottom{
+      transform: translateY(55px);
+      &__btn{
+        width: 390px;
+        height: 62px;
+      }
+    }
+  }
+  .logo {
+    padding-left: 7.5%;
+
+    &__text {
+      display: flex;
+      overflow: initial;
+    }
+  }
+  .burger {
+    display: none;
+    overflow: hidden;
+  }
 }
