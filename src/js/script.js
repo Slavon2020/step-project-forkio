@@ -5,6 +5,8 @@ menuBurg.addEventListener('click', function() {
     menuBurg.classList.toggle('burger--opened')
     navMobile.classList.toggle('hero-nav--mobile-active')
 });
+
+//
 // document.body.addEventListener('click', function (e) {
 //     const target = e.target;
 //     if ( navMobile.classList.contains('hero-nav--mobile-active') && target !== menuBurg && target !== navMobile)
