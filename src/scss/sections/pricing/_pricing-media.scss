@@ -1,55 +1,49 @@
 @media (min-width: 481px) {
     .pricing {
-        background: url('../../../../dist/img/pricing-img/pricing-768px-bg.png');
+        background: url('../img/pricing-img/pricing-768px-bg.png');
         &__heading {
             padding: 75px 0 40px;
         }
     }
     .pricing__cards {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 97%;
+        display: grid;
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
     }
     .pricing-card {
-        opacity: 0.8;
-        width: calc(50% - 13px);
-        &:nth-child(odd) {
-            margin-right: 25px;
+        margin: 0;
+        &:first-child {
+            justify-self: end;
         }
-    }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-    .pricing__cards {
-        width: calc(100% - 135px);
+        &:nth-child(4n) {
+            align-self: center;
+        }
+        opacity: 0.8;
     }
 }
 
 @media (min-width: 993px) {
     .pricing {
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
         &__heading {
             font-size: 48px;
             line-height: 50px;
         }
     }
     .pricing__cards {
-        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
     }
     .pricing-card {
-        width: calc(25% - 11px);
-        &:nth-child(odd) {
-            margin-right: 0;
+        width: calc(75% / 3 - 10px);
+        &-scaled {
+            width: 25%;
         }
     }
 }
 
-@media(min-width: 1200px) {
-    .pricing {
-        padding-left: 130px;
-        padding-right: 130px;
-    }
-}

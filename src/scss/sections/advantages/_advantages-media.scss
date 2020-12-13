@@ -3,12 +3,11 @@
         flex-direction: row;
         justify-content: center;
         &__img-frame {
-            width: 110px;
             margin-right: 25px;
             margin-bottom: 0;
         }
         &__img {
-            max-width: 100%;
+            width: 110px;
         }
         &__heading {
             text-align: left;
