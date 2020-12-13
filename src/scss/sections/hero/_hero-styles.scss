@@ -33,7 +33,7 @@
       cursor: pointer;
     }
 
-    &--btn:hover  {
+    &--btn:hover {
       background-color: #FFFFFF;
       border: 2px solid #8D81AC;
       color: #8D81AC;
@@ -120,7 +120,7 @@
     color: #FFFFFF;
   }
 
-  &:hover .logo__icon {
+  &:hover .logo__icon path {
     fill: #FFFFFF !important;
   }
 
@@ -129,7 +129,9 @@
   }
 
   &__icon {
-    //fill: #8D81AC;
+    width: 43px;
+    height: 41px;
+    //fill: url(#pattern0);
   }
 
   &__text {
@@ -169,7 +171,12 @@
     }
 
     & .hero-nav__link {
-      padding: 30px 35px 20px;
+      display: flex;
+      position: relative;
+      align-items: center;
+      padding-top: 30px;
+      padding-left: 35px;
+      padding-bottom: 20px;
       border-bottom: 3px solid #3b3b3b;
       text-align: start;
       font-family: Montserrat;
@@ -178,6 +185,20 @@
       font-size: 26px;
       line-height: 26px;
       color: #FFFFFF;
+    }
+    & .hero-nav__link:hover {
+      color: #8D81AC;
+    }
+    & .hero-nav__link:hover:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 13px;
+      left: 0;
+      //margin-right: 27px;
+      width: 8px;
+      height: 53px;
+      background: #8D81AC;
     }
   }
 
@@ -189,7 +210,12 @@
     line-height: 18px;
     color: #8D81AC;
   }
+  & .hero-nav__link:hover {
+    color: #FFFFFF;
+  }
+
 }
+
 
 
 .burger {

@@ -1,19 +1,21 @@
 @media (min-width: 481px) and (max-width: 992px) {
 
-  .hero{
+  .hero {
     &-header {
-    flex-wrap: wrap;
-    padding-top: 25px;
-    padding-bottom: 10px;
+      flex-wrap: wrap;
+      padding-top: 25px;
+      padding-bottom: 10px;
 
-    &--btn {
-      width: 145px;
-      margin-right: 2.6%;
+      &--btn {
+        width: 145px;
+        margin-right: 2.6%;
+      }
     }
-    }
-    &-bottom{
+
+    &-bottom {
       transform: translateY(55px);
-      &__btn{
+
+      &__btn {
         width: 390px;
         height: 62px;
       }
@@ -50,23 +52,93 @@
 @media (min-width: 993px) and (max-width: 1200px) {
   .hero {
     &-header {
+      display: flex;
       background: none;
 
       &--btn {
         width: 145px;
         margin-right: 7.5%;
+        order: 3;
       }
     }
-    &-bottom{
+
+    &-bottom {
       transform: translateY(55px);
-      &__btn{
+
+      &__btn {
         width: 390px;
         height: 62px;
       }
     }
   }
+
+  .hero-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+    //margin: 0 auto;
+    order: 2;
+
+    &__link {
+      //padding-left: 3%;
+      padding-right: 7%;
+    }
+  }
+
   .logo {
     padding-left: 7.5%;
+    order: 1;
+
+    &__text {
+      display: flex;
+      overflow: initial;
+    }
+  }
+  .burger {
+    display: none;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1201px) {
+  .hero {
+    &-header {
+      display: flex;
+      background: none;
+
+      &--btn {
+        width: 145px;
+        margin-right: 7.5%;
+        order: 3;
+      }
+    }
+
+    &-bottom {
+      transform: translateY(55px);
+
+      &__btn {
+        width: 390px;
+        height: 62px;
+      }
+    }
+  }
+
+  .hero-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+    //margin: 0 auto;
+    order: 2;
+
+    &__link {
+      //padding-left: 3%;
+      padding-right: 7%;
+    }
+  }
+
+  .logo {
+    padding-left: 7.5%;
+    order: 1;
 
     &__text {
       display: flex;
