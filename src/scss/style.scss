@@ -1,6 +1,10 @@
 @import "reset";
 @import "sections/allSections";
 
+*{
+    font-family: sans-serif;
+}
+
 .container {
     max-width: 1200px;
     padding-right: 10px;
