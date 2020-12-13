@@ -6,14 +6,14 @@
   width: 100%;
   background-position: center;
   background-size: cover;
-  background-image: url("../img/reviews-img/bgi.png");
+  //background-image: url(dist/img/reviews-img/bg-t.png);
+  //background-image: url("../img/reviews-img/bg-t.png");
 
   &-items {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 5px;
-    //justify-content: center;
-    //text-align: center;
+
   }
 
   &-title {
@@ -28,8 +28,6 @@
 
   &-text {
     width: 77%;
-    //padding-top: 30px;
-    //padding-bottom: 45px;
     margin: 30px auto 45px;
     font-family: 'Lato';
     font-style: italic;
@@ -54,12 +52,8 @@
     display: flex;
     height: 2px;
     margin: 20px auto 0;
-    text-align: center;
     background: #645766;
   }
 
 }
 
-//.review-item{
-//  width: calc(100% / 3 - 60px);
-//}
