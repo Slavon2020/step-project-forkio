@@ -21,7 +21,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: calc(100% - 60px);
+        width: 100%;
     }
     & button {
         outline: none;
@@ -30,11 +30,9 @@
 }
 
 .pricing-card {
-    width: 257px;
+    width: 90%;
     height: 457px;
-    &:not(:last-child) {
-        margin-bottom: 18px;
-    }
+    margin-bottom: 18px;
     &:first-child .pricing-card__type {
         margin-bottom: 65px;
     }
@@ -112,12 +110,12 @@
 
     &-scaled {
         height: 560px;
-        width: calc(100% + 40px);
+        width: 100%;
         padding-bottom: 0;
         background-color: #473249;
         & .pricing-card__category {
-            padding: 43px 0;
-            margin-bottom: 14px;
+            // padding: 43px 0;
+            // margin-bottom: 14px;
             background-color: #3F2C41;
         }
         & .pricing-card__price {
