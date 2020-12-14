@@ -5,6 +5,8 @@
   text-align: center;
   width: 100%;
   position: relative;
+  -webkit-background-size: cover;
+  background-size: cover;
   background-position: center;
   background-image: url('../img/hero-img/bg-hero.png');
 
@@ -12,9 +14,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 107%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    width: 106%;
+    padding-top: 31px;
+    padding-bottom: 32px;
     background: #27262A;
 
 
@@ -115,23 +117,19 @@
 .logo {
   display: flex;
   align-items: center;
+  padding-left: 3%;
 
   &:hover .logo__text {
     color: #FFFFFF;
   }
-
-  &:hover .logo__icon path {
-    fill: #FFFFFF !important;
-  }
-
-  &__icon-wrap {
-
-  }
-
+    
   &__icon {
     width: 43px;
     height: 41px;
-    //fill: url(#pattern0);
+    background-image: url('../img/hero-img/logo.png');
+  }
+  &:hover .logo__icon {
+    background-image: url('../img/hero-img/logo-hover.png');
   }
 
   &__text {
