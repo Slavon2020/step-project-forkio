@@ -6,13 +6,14 @@
   width: 100%;
   position: relative;
   background-position: center;
+  background-size: cover;
   background-image: url('../img/hero-img/bg-hero.png');
 
   &-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 107%;
     padding-top: 30px;
     padding-bottom: 30px;
     background: #27262A;
