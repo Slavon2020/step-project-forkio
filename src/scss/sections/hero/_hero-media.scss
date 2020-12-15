@@ -41,6 +41,9 @@
       padding-left: 2.4%;
       padding-right: 2.4%;
     }
+    &--mobile{
+      display: none;
+    }
   }
 
   .burger {
@@ -76,12 +79,13 @@
     display: flex;
     justify-content: flex-end;
     width: 75%;
-    //margin: 0 auto;
     order: 2;
 
     &__link {
-      //padding-left: 3%;
       padding-right: 7%;
+    }
+    &--mobile{
+      display: none;
     }
   }
 
@@ -127,12 +131,13 @@
     display: flex;
     justify-content: flex-end;
     width: 75%;
-    //margin: 0 auto;
     order: 2;
 
     &__link {
-      //padding-left: 3%;
       padding-right: 7%;
+    }
+    &--mobile{
+      display: none;
     }
   }
 
