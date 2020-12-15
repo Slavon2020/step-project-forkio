@@ -1,12 +1,12 @@
 const menuBurg = document.querySelector('.burger');
 const navMobile = document.querySelector('.hero-nav--mobile');
 
-function navMobileToggle () {
+function navMobileToggle() {
     menuBurg.classList.toggle('burger--opened');
     navMobile.classList.toggle('hero-nav--mobile-active');
-};
+}
 
-menuBurg.addEventListener('click', function() {
+menuBurg.addEventListener('click', function () {
     navMobileToggle();
 });
 
