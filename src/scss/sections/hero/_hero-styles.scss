@@ -11,15 +11,19 @@
   background-position: center;
   background-image: url('../img/hero-img/bg-hero.png');
 
+  &.container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   &-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 106%;
+    width: 100%;
     padding-top: 31px;
     padding-bottom: 32px;
     background: #27262A;
-
 
     &--btn {
       width: 119px;
@@ -27,7 +31,7 @@
       background: #8D81AC;
       border: none;
       border-radius: 40px;
-      font-family: Montserrat;
+      font-family: 'Montserrat';
       font-style: normal;
       font-weight: bold;
       font-size: 15px;
@@ -51,7 +55,7 @@
   &-title {
     margin-top: 50px;
     margin-bottom: 20px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -61,7 +65,7 @@
 
   &-subtitle {
     margin-bottom: 15px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -71,7 +75,7 @@
 
   &-destiny {
     margin-bottom: 350px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -88,7 +92,7 @@
       background: #8D81AC;
       border: none;
       border-radius: 40px;
-      font-family: Montserrat;
+      font-family: 'Montserrat';
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
@@ -105,7 +109,7 @@
 
     &__copyrighte {
       margin-top: 12px;
-      font-family: Montserrat;
+      font-family: 'Montserrat';
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -118,7 +122,7 @@
 .logo {
   display: flex;
   align-items: center;
-  padding-left: 3%;
+  margin-left: 5px;
 
   &:hover .logo__text {
     color: #FFFFFF;
@@ -136,7 +140,7 @@
   &__text {
     display: none;
     padding-left: 17px;
-    font-family: Lato;
+    font-family: 'Lato';
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -149,7 +153,6 @@
 
 .hero-nav {
   display: none;
-  //justify-content: space-between;
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -178,7 +181,7 @@
       padding-bottom: 20px;
       border-bottom: 3px solid #3b3b3b;
       text-align: start;
-      font-family: Montserrat;
+      font-family: 'Montserrat';
       font-style: normal;
       font-weight: normal;
       font-size: 26px;
@@ -202,7 +205,7 @@
   }
 
   &__link {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -212,16 +215,13 @@
   & .hero-nav__link:hover {
     color: #FFFFFF;
   }
-
 }
-
-
 
 .burger {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-right: 15px;
+  margin-right: 5px;
 
   &--opened {
     & .burger--line {

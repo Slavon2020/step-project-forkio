@@ -10,7 +10,7 @@
     &__heading {
         margin-bottom: 32px;
         text-align: center;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat';
         font-style: normal;
         font-weight: bold;
         font-size: 28px;
@@ -36,14 +36,14 @@
     &:first-child .pricing-card__type {
         margin-bottom: 65px;
     }
-    padding-bottom: 67px;
+    padding-bottom: 40px;
     background: #5F5161;
 
     &__category {
         width: 100%;
         margin-bottom: 30px;
         padding: 36px 0;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat';
         text-align: center;
         font-size: 24px;
         line-height: 24px;
@@ -63,7 +63,7 @@
         }
         &-value {
             margin-bottom: 20px;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Montserrat';
             font-size: 60px;
             line-height: 62px;
             font-weight: bold;
@@ -75,7 +75,7 @@
             }
         }
         &-period {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Montserrat';
             font-size: 14px;
             line-height: 16px;
             text-align: center;
@@ -86,7 +86,7 @@
 
     &__type {
         margin-bottom: 37px;
-        font-family: Montserrat;
+        font-family: 'Montserrat';
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -132,6 +132,5 @@
         padding: 19px 48px;
         background: #635164;
     }
-    
 }
 }

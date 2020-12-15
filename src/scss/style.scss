@@ -1,20 +1,17 @@
 @import "reset";
-@import "sections/allSections";
 
 *{
     font-family: sans-serif;
 }
 
 .container {
+    min-width: 320px;
     max-width: 1200px;
     padding-right: 10px;
     padding-left: 10px;
-    min-width: 320px;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
-
-
-
+@import "sections/allSections";
 @import "sections/allMedia";
