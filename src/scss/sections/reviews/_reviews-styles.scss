@@ -1,14 +1,17 @@
 .reviews {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
-  width: 100%;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
   background-image: url("../img/reviews-img/bgi-p.png");
+
+  & .container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 
   &-items {
     display: grid;

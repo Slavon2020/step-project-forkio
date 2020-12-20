@@ -11,10 +11,6 @@
   background-position: center;
   background-image: url('../img/hero-img/bg-hero.png');
 
-  &.container {
-    padding-left: 0;
-    padding-right: 0;
-  }
 
   &-header {
     display: flex;
@@ -123,12 +119,13 @@
   &:hover .logo__text {
     color: #FFFFFF;
   }
-    
+
   &__icon {
     width: 43px;
     height: 41px;
     background-image: url('../img/hero-img/logo.png');
   }
+
   &:hover .logo__icon {
     background-image: url('../img/hero-img/logo-hover.png');
   }
