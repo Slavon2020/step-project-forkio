@@ -7,6 +7,10 @@
     padding-bottom: 15px;
     background: #4B3B4E;
 
+    & .container {
+        width: 100%;
+    }
+
     &__heading {
         margin-bottom: 32px;
         text-align: center;
@@ -31,7 +35,7 @@
 
 .pricing-card {
     width: 90%;
-    max-width: 260px;
+    max-width: 300px;
     height: 457px;
     margin-bottom: 18px;
     &:first-child .pricing-card__type {
@@ -41,12 +45,12 @@
     background: #5F5161;
 
     &__category {
-        width: 100%;
+        max-width: 100%;
         margin-bottom: 30px;
         padding: 36px 0;
         font-family: 'Montserrat';
         text-align: center;
-        font-size: 24px;
+        font-size: 23px;
         line-height: 24px;
         text-transform: uppercase;
         color: #FFFFFF;
@@ -113,12 +117,10 @@
         justify-self: end;
         height: 560px;
         width: 100%;
-        max-width: 300px;
+        max-width: 340px;
         padding-bottom: 0;
         background-color: #473249;
         & .pricing-card__category {
-            // padding: 43px 0;
-            // margin-bottom: 14px;
             background-color: #3F2C41;
         }
         & .pricing-card__price {
