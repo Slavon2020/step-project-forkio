@@ -51,13 +51,15 @@
             max-height: 510px;
             grid-area: advantages-img-frame;
         }
-        display: grid;
+        & .container {
+            display: grid;
         grid-template-rows: 45px 4fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "advantages-items advantages-heading"
         "advantages-items advantages-img-frame"
         ;
+        }
     }
     .advantage {
         display: flex;
