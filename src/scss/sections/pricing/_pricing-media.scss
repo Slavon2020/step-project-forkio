@@ -1,6 +1,7 @@
 @media (min-width: 481px) {
     .pricing {
         background: url('../img/pricing-img/pricing-768px-bg.png');
+        background-size: cover;
         &__heading {
             padding: 75px 0 40px;
         }

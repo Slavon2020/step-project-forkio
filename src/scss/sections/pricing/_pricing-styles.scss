@@ -31,6 +31,7 @@
 
 .pricing-card {
     width: 90%;
+    max-width: 260px;
     height: 457px;
     margin-bottom: 18px;
     &:first-child .pricing-card__type {
@@ -109,8 +110,10 @@
     }
 
     &-scaled {
+        justify-self: end;
         height: 560px;
         width: 100%;
+        max-width: 300px;
         padding-bottom: 0;
         background-color: #473249;
         & .pricing-card__category {
