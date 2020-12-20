@@ -5,7 +5,12 @@
       display: grid;
       grid-template-rows: repeat(3, 1fr);
       grid-template-columns: 1fr 1fr;
-      grid-gap: 5px;
+      grid-row-gap: 55px;
+      grid-column-gap: 7%;
+    }
+    &-copyright {
+      width: 90%;
+      margin-top: 60px;
     }
   }
 
@@ -15,10 +20,16 @@
   .reviews{
 
     &-items {
+      width: 95%;
       display: grid;
       grid-template-rows: 1fr 1fr;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 5px;
+      grid-row-gap: 110px;
+      grid-column-gap: 7.5%;
+    }
+    &-copyright {
+      width: 75%;
+      margin-top: 115px;
     }
   }
 }

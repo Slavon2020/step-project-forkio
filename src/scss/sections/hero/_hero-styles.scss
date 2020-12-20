@@ -25,7 +25,7 @@
     padding-bottom: 32px;
     background: #27262A;
 
-    &--btn {
+    &-btn {
       width: 119px;
       height: 37px;
       background: #8D81AC;
@@ -40,17 +40,13 @@
       cursor: pointer;
     }
 
-    &--btn:hover {
+    &-btn:hover {
       background-color: #FFFFFF;
       border: 2px solid #8D81AC;
       color: #8D81AC;
     }
   }
 
-
-  &-title-section {
-
-  }
 
   &-title {
     margin-top: 50px;
@@ -151,71 +147,6 @@
   }
 }
 
-.hero-nav {
-  display: none;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  &--mobile {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 104px;
-    left: 5%;
-    width: 90%;
-    padding-bottom: 15px;
-    transition: 0.5s top;
-    background: #333333;
-
-    &-active {
-      display: flex;
-    }
-
-    & .hero-nav__link {
-      display: flex;
-      position: relative;
-      align-items: center;
-      padding-top: 30px;
-      padding-left: 35px;
-      padding-bottom: 20px;
-      border-bottom: 3px solid #3b3b3b;
-      text-align: start;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 26px;
-      line-height: 26px;
-      color: #FFFFFF;
-    }
-    & .hero-nav__link:hover {
-      color: #8D81AC;
-    }
-    & .hero-nav__link:hover:before {
-      content: '';
-      display: inline-block;
-      position: absolute;
-      top: 13px;
-      left: 0;
-      width: 8px;
-      height: 53px;
-      background: #8D81AC;
-    }
-  }
-
-  &__link {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 18px;
-    color: #8D81AC;
-  }
-  & .hero-nav__link:hover {
-    color: #FFFFFF;
-  }
-}
-
 .burger {
   display: flex;
   flex-direction: column;
@@ -223,8 +154,8 @@
   margin-right: 5px;
 
   &--opened {
-    & .burger--line {
-      &-first {
+    & .burger-line {
+      &--first {
         display: none;
       }
 
@@ -238,14 +169,14 @@
     }
   }
 
-  &--line-first {
+  &-line--first {
     width: 15px;
     height: 3px;
     background: #FFFFFF;
     border-radius: 5px;
   }
 
-  &--line {
+  &-line {
     width: 26px;
     height: 3px;
     margin-top: 6px;
